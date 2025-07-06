@@ -45,7 +45,7 @@ for (int i = 0; i < nt->FileHeader.NumberOfSections; i++, section++) {
     SIZE_T rawSize = section->SizeOfRawData;
 
     printf("section: %s\n", section->Name);
-    if (strcmp(section->Name, ".data") == 0 || strcmp(section->Name, ".text") == 0) {
+    if (strcmp(section->Name, ".text") == 0) {
     
         printf("Mapped section: %.*s\n", 8, section->Name);
 
